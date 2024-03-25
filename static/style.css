@@ -1,0 +1,104 @@
+.jumbotron {
+    background-color: orange;
+}
+
+.original_title {
+    background-color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    Justify-content: center;
+}
+
+.summary_title {
+    background-color: greenyellow;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    Justify-content: center;
+}
+
+.srt {
+    display: flex;
+    flex-direction:row;
+}
+
+.originalTxt {
+    background-color: orangered;
+    padding: 20px;
+}
+
+.summaryTxt {
+    background-color: greenyellow;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.heading {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.lead {
+    display: flex;
+    justify-content: center;
+}
+.submitBtn{
+    margin-top:10px ;
+}
+
+.header {
+    padding: 0 70px; /* Adjust the padding as needed */
+    margin-right: 80px;
+}
+
+.mover{
+    height: 150px;
+}
+.mover p{
+    font-size: 3em;
+    color: white;
+
+}
+.mover p .animate{
+    color: magenta;
+    transition: all 0.5s ease;
+    animation: moveAlphabets 1s ease forwards;
+}
+
+
+.heads span {
+    margin-left: 40px;
+}
+/* Define the animation */
+@keyframes moveAlphabets {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveNumbers {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Apply the animation to specific elements */
+#animationSection .alphabet {
+    animation: moveAlphabets 1s ease forwards;
+}
+
+#animationSection .number {
+    animation: moveNumbers 1s ease forwards;
+}
+
+/* Add transition to push down the summarizer part */
+#animationSection {
+    transition: margin-top 1s ease;
+}
+
+#animationSection.animation-done {
+    margin-top: 200px; /* Adjust the value as needed */
+}
+
