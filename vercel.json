@@ -1,12 +1,9 @@
-"builds": [
-    {
-        "src":"summarizer/app.py",
-        "use":"@vercel/python"
-    }
-],
-"routes":[
-    {
-        "src":"/(.*)"
-        "dest":"summarizer/app.py"
-    }
-]
+{
+    "version": 2,
+    "builds": [
+        {"src":"summarizer/app.py", "use":"@vercel/python"}
+    ],
+    "routes":[
+        {"src":"/(.*)", "dest":"app.py"}
+    ]
+}
